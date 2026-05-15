@@ -113,7 +113,7 @@ export default function Footer() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 flex items-center justify-center rounded-lg border border-[#2a2a2a] bg-[#1e1e1e] text-sm transition-colors hover:border-[#3ac2b7] hover:bg-[#1e1a12]"
+                  className="w-9 h-9 flex items-center justify-center rounded-lg border border-[#2a2a2a] bg-[#1e1e1e] text-sm transition-colors hover:border-[#f36f21] hover:bg-[#1e1a12]"
                 >
                   {s.label}
                 </Link>
@@ -124,7 +124,7 @@ export default function Footer() {
           {/* Link Columns */}
           {Object.values(footerLinks).map((col) => (
             <div key={col.title}>
-              <h3 className="mb-4 text-[10px] uppercase tracking-[0.2em] font-medium text-[#3ac2b7]">
+              <h3 className="mb-4 text-[10px] uppercase tracking-[0.2em] font-medium text-[#f36f21]">
                 {col.title}
               </h3>
               <ul className="space-y-2.5">
@@ -132,7 +132,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="inline-block text-sm text-[#888] transition-all duration-300 transform hover:translate-x-1.5 ease-in-out hover:text-[#3ac2b7]"
+                      className="inline-block text-sm text-[#888] transition-all duration-300 transform hover:translate-x-1.5 ease-in-out hover:text-[#f36f21]"
                     >
                       {link.label}
                     </Link>
@@ -144,7 +144,7 @@ export default function Footer() {
 
           {/* Newsletter Column */}
           <div>
-            <h3 className="mb-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#3ac2b7] ">
+            <h3 className="mb-2 text-[10px] uppercase tracking-[0.2em] font-medium text-[#f36f21] ">
               Stay Updated
             </h3>
             <p className="mb-4 text-xs text-[#888] leading-relaxed">
@@ -158,11 +158,11 @@ export default function Footer() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="your@email.com"
                 required
-                className="flex-1 min-w-0 rounded-l-lg border border-[#2a2a2a] bg-[#1e1e1e] px-3 py-2.5 text-xs text-[#f0ede8] placeholder:text-[#555] outline-none focus:border-[#0f766e]  transition-colors"
+                className="flex-1 min-w-0 rounded-l-lg border border-[#2a2a2a] bg-[#1e1e1e] px-3 py-2.5 text-xs text-[#f0ede8] placeholder:text-[#555] outline-none focus:border-[#f36f21]  transition-colors"
               />
               <button
                 type="submit"
-                className="rounded-r-lg bg-[#0f766e] cursor-pointer px-4 py-2.5 text-[11px] font-medium tracking-wide text-white whitespace-nowrap hover:bg-[#3ac2b7] transition-colors"
+                className="rounded-r-lg bg-[#f36f21] cursor-pointer px-4 py-2.5 text-[11px] font-medium tracking-wide text-white whitespace-nowrap hover:bg-[#f36f21] transition-colors"
               >
                 Subscribe
               </button>
@@ -204,7 +204,7 @@ export default function Footer() {
             {topVendors.map((v) => (
               <span
                 key={v}
-                className="cursor-pointer rounded-full border border-[#2a2a2a] px-3 py-1 text-[11px] text-[#888] transition-colors hover:border-[#0f766e]  hover:text-[#0f766e]"
+                className="cursor-pointer rounded-full border border-[#2a2a2a] px-3 py-1 text-[11px] text-[#888] transition-colors hover:border-[#f36f21]  hover:text-[#f9630c]"
               >
                 {v}
               </span>
@@ -217,11 +217,11 @@ export default function Footer() {
       <div className="border-t border-[#2a2a2a]">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-wrap items-center justify-between gap-4">
           <p className="text-xs text-[#888]">
-            © 2026 <span className="text-[#3ac2b7]">AdilBay</span>. All rights
+            © 2026 <span className="text-[#f36f21]">AdilBay</span>. All rights
             reserved. Develop by{" "}
             <Link
               href={"https://codeclubitsolutions.com/"}
-              className="text-[#3ac2b7] hover:text-white duration-300 transition-all "
+              className="text-[#f36f21] hover:text-white duration-300 transition-all "
             >
               CodeClub IT Solutions
             </Link>

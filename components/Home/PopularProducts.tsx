@@ -68,7 +68,7 @@ export default function PopularProducts() {
             <div className="relative bg-gray-100 h-45 flex items-center justify-center">
               {/* Discount */}
               {product.discount && (
-                <div className="absolute top-3 right-3 bg-green-100 text-[#0f766e] text-xs px-2 py-1 rounded-full font-medium">
+                <div className="absolute top-3 right-3 bg-orange-100 text-[#f36f21] text-xs px-2 py-1 rounded-full font-medium">
                   {product.discount}% Off
                 </div>
               )}
@@ -90,7 +90,7 @@ export default function PopularProducts() {
                 transition={{ duration: 0.3 }}
                 className="group absolute bottom-4 left-1/2 -translate-x-1/2 bg-white shadow-md px-3 py-2 rounded-full text-xs flex items-center gap-2 whitespace-nowrap cursor-pointer"
               >
-                <span className="flex items-center gap-2 text-black transition-colors duration-300 group-hover:text-[#0f766e]">
+                <span className="flex items-center gap-2 text-black transition-colors duration-300 group-hover:text-[#f36f21]">
                   {" "}
                   <Expand size={16} /> Quick View
                 </span>
@@ -102,7 +102,7 @@ export default function PopularProducts() {
                   rest: { scale: 0.9 },
                   hover: { scale: 1 },
                 }}
-                className="absolute bottom-3 right-3 bg-[#0f766e] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
+                className="absolute bottom-3 right-3 bg-[#f36f21] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-md"
               >
                 <ShoppingBag size={18} />
               </motion.button>
@@ -153,7 +153,7 @@ export default function PopularProducts() {
 
                   <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden">
                     <div
-                      className="bg-[#0f766e] h-full"
+                      className="bg-[#f36f21] h-full"
                       style={{
                         width: `${(product.sold / product.total!) * 100}%`,
                       }}

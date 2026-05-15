@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <div className="w-full ">
       {/* 🔝 TOP BAR */}
-      <div className="bg-[#0f766e] text-white text-[13px] px-6 py-2 flex justify-between items-center">
+      <div className="bg-[#f36f21] text-white text-[13px] px-6 py-2 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <span>Need Support? Call Us</span>
           <span className="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs font-medium">
@@ -72,7 +72,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="text-3xl font-bold text-[#0f766e] tracking-tight"
+          className="text-3xl font-bold text-[#f36f21] tracking-tight"
         >
           AdilBay
         </Link>
@@ -136,7 +136,7 @@ export default function Navbar() {
         <div className="relative">
           <button
             onClick={() => setCategoryOpen(!categoryOpen)}
-            className="bg-[#0f766e] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 font-medium shadow-sm"
+            className="bg-[#f36f21] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 font-medium shadow-sm"
           >
             ☰ Explore All Categories <ChevronDown size={16} />
           </button>

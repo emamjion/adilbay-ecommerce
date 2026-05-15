@@ -73,7 +73,7 @@ export default function FeaturedCategories() {
           <motion.div
             key={index}
             whileHover={{ y: -5 }}
-            className="bg-white rounded-2xl border hover:border-[#0f766e] border-gray-200 p-5 text-left shadow-sm hover:shadow-md transition-all duration-300"
+            className="bg-white rounded-2xl border hover:border-[#f36f21] border-gray-200 p-5 text-left shadow-sm hover:shadow-md transition-all duration-300"
           >
             {/* Header */}
             <div className="flex items-center gap-3 mb-3">
@@ -90,7 +90,7 @@ export default function FeaturedCategories() {
                   key={i}
                   whileHover={{ x: 6 }} // 🔥 right move animation
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="text-sm text-gray-500 hover:text-[#0f766e] cursor-pointer flex items-center gap-1"
+                  className="text-sm text-gray-500 hover:text-[#f36f21] cursor-pointer flex items-center gap-1"
                 >
                   <span className="text-xs">{">"}</span>
                   {item}

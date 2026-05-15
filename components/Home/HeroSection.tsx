@@ -67,7 +67,7 @@ export default function HeroSection() {
               <div className="max-w-xl text-white">
                 <div className="flex items-center gap-3 mb-4">
                   <p className="text-sm opacity-90">Get your supplement Now</p>
-                  <span className="bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full">
+                  <span className="bg-[#f36f21] text-white text-xs font-semibold px-3 py-1 rounded-full">
                     SALE ON FRIDAY
                   </span>
                 </div>
@@ -80,7 +80,7 @@ export default function HeroSection() {
                   {slide.desc}
                 </p>
 
-                <Button className="rounded-full px-5 py-5 flex items-center gap-2 bg-[#f36f21] hover:bg-slate-800">
+                <Button className="rounded-full px-5 py-5 flex items-center gap-2 bg-[#f36f21] hover:bg-white hover:text-[#f36f21] duration-300">
                   Shop Now
                   <ArrowUpRight size={18} />
                 </Button>

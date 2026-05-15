@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="bg-[#1a2752] text-white text-[13px] px-6 py-2 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <span>Need Support? Call Us</span>
-          <span className="bg-[#f36f21] text-black px-2 py-0.5 rounded text-xs font-medium">
+          <span className="bg-[#f36f21] text-white px-2 py-0.5 rounded text-xs font-medium">
             (480) 555-0103
           </span>
         </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
           </span>
           <span className="flex items-center gap-2">
             Fashion Category
-            <span className="bg-[#f36f21] text-black px-2 py-0.5 rounded text-xs font-semibold">
+            <span className="bg-[#f36f21] text-white px-2 py-0.5 rounded text-xs font-semibold">
               25% OFF
             </span>
           </span>
@@ -253,7 +253,18 @@ export default function Navbar() {
             >
               {/* Header */}
               <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold text-[#0f766e]">AdilBay</h1>
+                {/* <h1 className="text-2xl font-bold text-[#0f766e]">AdilBay</h1> */}
+                <Link
+                  href="/"
+                  className="text-3xl font-bold text-[#f36f21] tracking-tight"
+                >
+                  <Image
+                    src={"/images/Adilbay.png"}
+                    alt="logo"
+                    width={80}
+                    height={80}
+                  />
+                </Link>
                 <button onClick={() => setMobileOpen(false)}>✕</button>
               </div>
 

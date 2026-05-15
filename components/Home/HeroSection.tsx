@@ -49,7 +49,8 @@ export default function HeroSection() {
   return (
     <section className="w-full px-4 py-3">
       <div
-        className="relative overflow-hidden rounded-3xl bg-linear-to-r from-[#f36f21] to-[#f56b1a]
+        //   bg-linear-to-r from-[#f36f21] to-[#f56b1a]
+        className="relative overflow-hidden rounded-3xl bg-[#1a2752]
       h-105 md:h-130 flex items-center py-6 md:py-0"
       >
         {/* SLIDES */}
@@ -79,7 +80,7 @@ export default function HeroSection() {
                   {slide.desc}
                 </p>
 
-                <Button className="rounded-full px-5 py-5 flex items-center gap-2 bg-[#1a2752] hover:bg-slate-800">
+                <Button className="rounded-full px-5 py-5 flex items-center gap-2 bg-[#f36f21] hover:bg-slate-800">
                   Shop Now
                   <ArrowUpRight size={18} />
                 </Button>

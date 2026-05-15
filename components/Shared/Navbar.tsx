@@ -13,6 +13,7 @@ import {
   User,
   User2,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,7 @@ export default function Navbar() {
   return (
     <div className="w-full ">
       {/* 🔝 TOP BAR */}
-      <div className="bg-[#f36f21] text-white text-[13px] px-6 py-2 flex justify-between items-center">
+      <div className="bg-[#1a2752] text-white text-[13px] px-6 py-2 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <span>Need Support? Call Us</span>
           <span className="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs font-medium">
@@ -74,7 +75,12 @@ export default function Navbar() {
           href="/"
           className="text-3xl font-bold text-[#f36f21] tracking-tight"
         >
-          AdilBay
+          <Image
+            src={"/images/adilbay.png"}
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </Link>
 
         {/* Search */}
@@ -136,7 +142,7 @@ export default function Navbar() {
         <div className="relative">
           <button
             onClick={() => setCategoryOpen(!categoryOpen)}
-            className="bg-[#f36f21] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 font-medium shadow-sm"
+            className="bg-[#1a2752] text-white px-5 py-2.5 rounded-lg flex items-center gap-2 font-medium shadow-sm"
           >
             ☰ Explore All Categories <ChevronDown size={16} />
           </button>

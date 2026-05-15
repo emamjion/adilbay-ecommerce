@@ -7,7 +7,8 @@ export default function DeliveryBanner() {
   return (
     // rounded-3xl
     <section className="w-full py-10 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto bg-linear-to-r from-[#f36f21] to-[#f56b1a]  px-4 sm:px-6 md:px-10 py-10 flex flex-col lg:flex-row items-center justify-between gap-8 overflow-hidden">
+        {/* bg-linear-to-r from-[#f36f21] to-[#f56b1a] */}
+      <div className="max-w-7xl mx-auto bg-[#1a2752]  px-4 sm:px-6 md:px-10 py-10 flex flex-col lg:flex-row items-center justify-between gap-8 overflow-hidden">
         {/* LEFT IMAGE */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

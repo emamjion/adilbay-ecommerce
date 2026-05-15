@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="bg-[#1a2752] text-white text-[13px] px-6 py-2 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <span>Need Support? Call Us</span>
-          <span className="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs font-medium">
+          <span className="bg-[#f36f21] text-black px-2 py-0.5 rounded text-xs font-medium">
             (480) 555-0103
           </span>
         </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
           </span>
           <span className="flex items-center gap-2">
             Fashion Category
-            <span className="bg-yellow-400 text-black px-2 py-0.5 rounded text-xs font-semibold">
+            <span className="bg-[#f36f21] text-black px-2 py-0.5 rounded text-xs font-semibold">
               25% OFF
             </span>
           </span>
@@ -76,7 +76,7 @@ export default function Navbar() {
           className="text-3xl font-bold text-[#f36f21] tracking-tight"
         >
           <Image
-            src={"/images/adilbay.png"}
+            src={"/images/Adilbay.png"}
             alt="logo"
             width={100}
             height={100}
@@ -95,7 +95,7 @@ export default function Navbar() {
         {/* Right */}
         <div className="flex items-center gap-3">
           {/* Account */}
-          <div className="hidden md:flex items-center gap-3 bg-yellow-400 px-4 py-2 rounded-xl cursor-pointer hover:opacity-90 transition">
+          <div className="hidden md:flex items-center gap-3 bg-[#f36f21] text-white px-4 py-2 rounded-xl cursor-pointer hover:opacity-90 transition">
             <User size={18} />
             <div className="leading-tight">
               <p className="text-[11px]">Account</p>
@@ -104,7 +104,7 @@ export default function Navbar() {
           </div>
 
           {/* Cart */}
-          <div className="flex items-center gap-3 bg-yellow-400 px-4 py-2 rounded-xl relative">
+          <div className="flex items-center gap-3 bg-[#f36f21] text-white px-4 py-2 rounded-xl relative">
             <ShoppingCart size={18} />
             <div className="leading-tight">
               <p className="text-[11px]">Cart</p>

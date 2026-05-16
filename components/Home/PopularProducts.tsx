@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Expand, ShoppingBag } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
+import QuickViewModal from "../QuickViewModal";
 
 type Product = {
   id: number;
@@ -31,6 +33,8 @@ const products: Product[] = Array.from({ length: 20 }).map((_, i) => ({
 }));
 
 export default function PopularProducts() {
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [open, setOpen] = useState(false);
   return (
     <section className="py-14 bg-[#f7f7f7]">
       {/* HEADER */}
@@ -83,6 +87,10 @@ export default function PopularProducts() {
 
               {/* Quick View (hover) */}
               <motion.div
+                onClick={() => {
+                  setSelectedProduct(product);
+                  setOpen(true);
+                }}
                 variants={{
                   rest: { opacity: 0, y: 20 },
                   hover: { opacity: 1, y: 0 },
@@ -175,6 +183,19 @@ export default function PopularProducts() {
           </motion.div>
         ))}
       </div>
+
+      <QuickViewModal
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        product={
+          selectedProduct && {
+            ...selectedProduct,
+            stock: 183,
+            description:
+              "Organic food is food produced by methods complying with the standards of organic farming...",
+          }
+        }
+      />
     </section>
   );
 }
